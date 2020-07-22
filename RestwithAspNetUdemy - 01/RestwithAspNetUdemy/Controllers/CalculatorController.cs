@@ -11,8 +11,8 @@ namespace RestwithAspNetUdemy.Controllers
     public class CalculatorController : ControllerBase
     {
 
-        // GET api/values/5/5
-        [HttpGet("{firstNumber}/{secondNumber}")]
+        // GET api/values/sum/5/5
+        [HttpGet("sum/{firstNumber}/{secondNumber}")]
         public IActionResult Sum(string firstNumber, string secondNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
@@ -24,23 +24,44 @@ namespace RestwithAspNetUdemy.Controllers
             return BadRequest("Invalid Input");
         }
 
-        private decimal ConvertToDecimal(string number)
+        //Get api/values/sub/2/4
+        [HttpGet("sub/{firstNumber}/{secondNumber}")]
+        public IActionResult Sub(string firstNumber, string secondNumber)
         {
-            decimal decimalValue;
-            if (decimal.TryParse(number, out decimalValue))
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
-                return decimalValue;
+                var subtraction = ConvertToDecimal(firstNumber) - ConvertToDecimal(secondNumber);
+                return Ok(subtraction.ToString());
             }
 
-            return 0;
+            return BadRequest("Invalid Number");
         }
 
-        private bool IsNumeric(string strNumber)
+        //Get api/values/multiplication/2/4
+        [HttpGet("multiplication/{firstNumber}/{secondNumber}")]
+        public IActionResult Multiplication(string firstNumber, string secondNumber)
         {
-            double number;
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var subtraction = ConvertToDecimal(firstNumber) * ConvertToDecimal(secondNumber);
+                return Ok(subtraction.ToString());
+            }
 
-            bool isNumber = double.TryParse(strNumber, System.Globalization.NumberStyles.Any, System.Globalization.NumberFormatInfo.InvariantInfo, out number);
-            return isNumber;
+            return BadRequest("Invalid Number");
         }
+
+        //Get api/values/division/2/4
+        [HttpGet("division/{firstNumber}/{secondNumber}")]
+        public IActionResult Division(string firstNumber, string secondNumber)
+        {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var subtraction = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
+                return Ok(subtraction.ToString());
+            }
+
+            return BadRequest("Invalid Number");
+        }
+
     }
 }
