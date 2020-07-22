@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy\\RestwithAspNetUdemy\\RestwithAspNetUdemy.csproj",
+      "projectUniqueName": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy - 01\\RestwithAspNetUdemy\\RestwithAspNetUdemy.csproj",
       "projectName": "RestwithAspNetUdemy",
-      "projectPath": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy\\RestwithAspNetUdemy\\RestwithAspNetUdemy.csproj",
+      "projectPath": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy - 01\\RestwithAspNetUdemy\\RestwithAspNetUdemy.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy\\RestwithAspNetUdemy\\obj\\",
+      "outputPath": "C:\\Users\\Julio\\Documents\\Udemy\\REST\\RestwithAsp-NetUdemy\\RestwithAspNetUdemy - 01\\RestwithAspNetUdemy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
